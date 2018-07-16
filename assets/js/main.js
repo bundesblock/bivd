@@ -57,9 +57,11 @@ $('#bootstrap-touch-slider').bsTouchSlider();
     var singleAwerdCarousel = $(".single-awards.owl-carousel");
 
     singleAwerdCarousel.owlCarousel({
-
-        autoplay: true,
-        loop: true,
+        items: 4,
+        autoplay: false,
+        loop: false,
+        center: false,
+        autoWidth: false,
         responsive: {
 
             0: {

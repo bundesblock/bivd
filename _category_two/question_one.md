@@ -4,10 +4,10 @@ date: 25-01-2018
 author: Luaos Jasa
 
 category_name: 
-  - ReactJS
+  - Privacy By Design
 
 question: 
-  - What is ReactJS ?
+  - Worum geht es bei Privacy by Design?
 
 question_desc:
   - React JS Question Description AngularJs Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consectetur quia, eaque totam iure cum. Tenetur atque, ad impedit nihil, optio eius, amet dignissimos quam saepe modi odit esse labore!

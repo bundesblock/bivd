@@ -4,7 +4,7 @@ date: 27-01-2018
 author: Sassla Duakse
 
 category_name:
-  - VueJS
+  - Gemeinsame Standards
 
 question: 
   - How Can I Learning VueJS Framework ?

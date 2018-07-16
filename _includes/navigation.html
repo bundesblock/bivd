@@ -6,7 +6,7 @@
                 <!-- Start Header Logo -->
                 <div class="col-xs-12 col-md-3">
                     <div class="header-logo">
-                        <a href="{{site.url}}">BiVD</a>
+                        <a href="{{site.url}}"><img src="../assets/images/bivd5.png"></a>
                     </div>
                 </div>
                 <!-- End Header Logo -->
@@ -24,69 +24,69 @@
                             </div>
                             <div class="collapse navbar-collapse top-menu">
 
-                           <!--  Static Dropdown Menu
+                                <!--  Static Dropdown Menu
+
+                                     <nav>
+                                         <ul class="nav navbar-nav">
+                                             <li class="active"><a href="{{site.url}}">Home<span>Get everything</span></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="index.html">Home Version 1</a></li>
+                                                    <li><a href="index-2.html">Home Version 2</a></li>
+                                                </ul>
+                                             </li>
+                                             <li><a href="about-us.html">About<span>Know about us</span></a></li>
+                                             <li><a href="questions.html">Questions<span>Ask Your Question</span></a>
+                                                 <ul class="dropdown">
+                                                     <li>
+                                                         <a href="questions.html"> <span><i class="fa fa-question-circle"></i></span>All Questions</a>
+                                                     </li>
+                                                     <li><a href="ask-question.html"><span><i class="fa  fa-question-circle-o"></i></span>Ask Questions</a></li>
+                                                     <li><a href="answers.html"><span><i class="fa fa-reply-all"></i></span>Answers</a></li>
+                                                     <li><a href="login.html"><span><i class="fa fa-sign-in"></i></span>Login</a></li>
+                                                     <li><a href="register.html"><span><i class="fa fa-registered"></i></span>Register</a></li>
+                                                 </ul>
+                                             </li>
+                                             <li><a href="#">Pages<span>See All Pages</span></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="index-2.html">Home 2</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="questions.html">Questions</a></li>
+                                                    <li><a href="answers.html">Answers</a></li>
+                                                    <li><a href="updates.html">Updates</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                                    <li><a href="login.html">login</a></li>
+                                                    <li><a href="register.html">Register</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                </ul>
+                                             </li>
+                                             <li><a href="blog.html">Blog<span>All Blog Posts</span></a></li>
+                                             <li><a href="updates.html">Updates<span>Latest releases</span></a></li>
+                                             <li><a href="contact.html">Contact<span>Let us contact</span></a></li>
+                                         </ul>
+                                     </nav>
+
+                                     End Static Dropdown Menu -->
 
                                 <nav>
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="{{site.url}}">Home<span>Get everything</span></a>
-                                           <ul class="dropdown">
-                                               <li><a href="index.html">Home Version 1</a></li>
-                                               <li><a href="index-2.html">Home Version 2</a></li>
-                                           </ul>                                                
+                                        {% for pageinfo in site.pages %}
+                                        {% if pageinfo.navigation == true %}
+                                        <li>
+                                            <a href="{{pageinfo.url}}">{{pageinfo.title}}
+                                                <span>{{pageinfo.sub_title}}</span>
+                                            </a>
                                         </li>
-                                        <li><a href="about-us.html">About<span>Know about us</span></a></li>                                
-                                        <li><a href="questions.html">Questions<span>Ask Your Question</span></a>
-                                            <ul class="dropdown">
-                                                <li>
-                                                    <a href="questions.html"> <span><i class="fa fa-question-circle"></i></span>All Questions</a>
-                                                </li>                                                       
-                                                <li><a href="ask-question.html"><span><i class="fa  fa-question-circle-o"></i></span>Ask Questions</a></li>
-                                                <li><a href="answers.html"><span><i class="fa fa-reply-all"></i></span>Answers</a></li>
-                                                <li><a href="login.html"><span><i class="fa fa-sign-in"></i></span>Login</a></li>
-                                                <li><a href="register.html"><span><i class="fa fa-registered"></i></span>Register</a></li>
-                                            </ul>
+                                        {% endif %}
+                                        {% endfor %}
+                                        <li>
+                                            <a href="/pages/index.html">Blog
+                                                <span>Neuigkeiten</span>
+                                            </a>
                                         </li>
-                                        <li><a href="#">Pages<span>See All Pages</span></a>
-                                           <ul class="dropdown">
-                                               <li><a href="index-2.html">Home 2</a></li>
-                                               <li><a href="blog.html">Blog</a></li>
-                                               <li><a href="blog-details.html">Blog Details</a></li>
-                                               <li><a href="questions.html">Questions</a></li>
-                                               <li><a href="answers.html">Answers</a></li>
-                                               <li><a href="updates.html">Updates</a></li>
-                                               <li><a href="contact.html">Contact</a></li>
-                                               <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                                               <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                                               <li><a href="login.html">login</a></li>
-                                               <li><a href="register.html">Register</a></li>
-                                               <li><a href="404.html">404</a></li>
-                                           </ul>
-                                        </li>
-                                        <li><a href="blog.html">Blog<span>All Blog Posts</span></a></li>
-                                        <li><a href="updates.html">Updates<span>Latest releases</span></a></li>
-                                        <li><a href="contact.html">Contact<span>Let us contact</span></a></li>
                                     </ul>
-                                </nav>
-
-                                End Static Dropdown Menu -->
-
-                                <nav>
-                                    <ul class="nav navbar-nav">
-                                    {% for pageinfo in site.pages %}
-                                    {% if pageinfo.navigation == true %}
-                                     <li>
-                                        <a href="{{pageinfo.url}}">{{pageinfo.title}}
-                                          <span>{{pageinfo.sub_title}}</span>
-                                        </a>
-                                     </li>
-                                    {% endif %}
-                                    {% endfor %}
-                                     <li>
-                                        <a href="/pages/index.html">Blog
-                                          <span>Blog Posts</span>
-                                        </a>
-                                      </li>
-                                     </ul>
                                 </nav>
                             </div>
                         </div>
@@ -103,41 +103,16 @@
     <div class="mobile-menu">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a>
-                    <ul>
-                        <li><a href="index.html">Home Version 1</a></li>
-                        <li><a href="index-2.html">Home Version 2</a></li>
-                    </ul>                       
+                {% for pageinfo in site.pages %}
+                {% if pageinfo.navigation == true %}
+                <li>
+                    <a href="{{pageinfo.url}}">{{pageinfo.title}}</a>
                 </li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="#">Questions</a>
-                    <ul>
-                        <li><a href="questions.html"> Questions</a></li>
-                        <li><a href="ask-question.html">Ask Questions</a></li>
-                        <li><a href="answers.html">Answers</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Register</a></li>                               
-                    </ul>
+                {% endif %}
+                {% endfor %}
+                <li>
+                    <a href="/pages/index.html">Blog</a>
                 </li>
-                <li><a href="#">Pages</a>
-                    <ul>
-                       <li><a href="index-2.html">Home 2</a></li>
-                       <li><a href="blog.html">Blog</a></li>
-                       <li><a href="blog-details.html">Blog Details</a></li>
-                       <li><a href="questions.html">Questions</a></li>
-                       <li><a href="answers.html">Answers</a></li>
-                       <li><a href="updates.html">Updates</a></li>
-                       <li><a href="contact.html">Contact</a></li>
-                       <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                       <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                       <li><a href="login.html">login</a></li>
-                       <li><a href="register.html">Register</a></li>
-                       <li><a href="404.html">404</a></li>                          
-                    </ul>
-                </li>                       
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="updates.html">Updates</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
