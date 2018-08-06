@@ -73,22 +73,22 @@
                                 <nav>
                                     <ul class="nav navbar-nav">
                                         <li>
-                                            <a href="#initiative">Initiative
+                                            <a href="#initiative" class="page-scroll">Initiative
                                                 <span>Über BiVD</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#vision">Vision
+                                            <a href="#vision" class="page-scroll">Vision
                                                 <span>Blockchain</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#partner">Partner
+                                            <a href="#partner" class="page-scroll">Partner
                                                 <span>Netzwerk</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/pages/">Blog
+                                            <a href="/pages/" class="page-scroll">Blog
                                                 <span>Neuigkeiten</span>
                                             </a>
                                         </li>
@@ -109,15 +109,17 @@
     <div class="mobile-menu">
         <nav>
             <ul>
-                {% for pageinfo in site.pages %}
-                {% if pageinfo.navigation == true %}
                 <li>
-                    <a href="{{pageinfo.url}}">{{pageinfo.title}}</a>
+                    <a href="#initiative" class="page-scroll">Initiative´</a>
                 </li>
-                {% endif %}
-                {% endfor %}
                 <li>
-                    <a href="/pages/index.html">Blog</a>
+                    <a href="#vision" class="page-scroll">Vision</a>
+                </li>
+                <li>
+                    <a href="#partner" class="page-scroll">Partner</a>
+                </li>
+                <li>
+                    <a href="/pages/" class="page-scroll">Blog</a>
                 </li>
             </ul>
         </nav>

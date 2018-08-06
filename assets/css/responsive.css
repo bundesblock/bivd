@@ -22,7 +22,6 @@
     }
 }
 /* Tablet Layout: 768px. */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.mainmenu .top-menu>nav {
     text-align: center;
@@ -35,7 +34,7 @@
     margin: 0 auto;
     float: none;
     display: inline-block;
-margin-bottom: -7px;	
+    margin-bottom: -7px;
 }
     .themeix-ptb {
         padding-top: 50px;
@@ -101,7 +100,7 @@ margin-bottom: -7px;
         font-size:14px;
     }
     /* Timeline */
-    
+
     .slider-fixed-text h1 {
         font-size:40px;
     }
@@ -125,13 +124,29 @@ margin-bottom: -7px;
     display: none;
 }
     .mainmenu-wrapper .header-logo {
-padding-top: 65px;
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
+    }
+
+    .mean-container .mean-nav {
+        background: #fff;
+        color: #222c59;
+    }
+    .mean-container .mean-nav ul li a {
+        color: #222c59;
+        padding-left: 5em;
     }
     .mean-container .mean-bar {
         position: absolute;
-        top: 0px;
+        top: 1.2em;
+        background: none;
+    }
+    .mean-container .mean-bar a.meanmenu-reveal * {
+        background: #222c59;
+        color: #222c59;
+    }
+    .mean-container a.meanmenu-reveal {
+        color: #222c59;
     }
 
     .slider-wrapper .nivoSlider img {
@@ -151,8 +166,11 @@ padding-top: 65px;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
 
-    .slider-buttons{
+    .slider-buttons a {
         display: none;
+    }
+    .slider-buttons a:first-child {
+        display: inline-block;
     }
 
 
@@ -322,7 +340,7 @@ padding-top: 65px;
         //display:none;
     }
     .slider-wrapper-2 .slider-fixed-text h1 {
-        font-size:25px;
+        font-size:1.5em;
     }
     .slider-fixed-text .slider-buttons a {
         margin-bottom:10px;
@@ -386,7 +404,7 @@ padding-top: 65px;
         display: none;
     }
     .navbar-fixed-top {
-        position: static;
+        /*position: static;*/
     }
 
 }

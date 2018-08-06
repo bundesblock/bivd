@@ -316,7 +316,17 @@ $('#bootstrap-touch-slider').bsTouchSlider();
 
 /*=============================================
 	5. Scroll to Top
-===============================================*/ 
+===============================================*/
+
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
 
     function scrolltop() {
 
