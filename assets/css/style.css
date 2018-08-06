@@ -82,11 +82,6 @@ body {
     color: #666666;
     line-height: 25px;	
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 a {
     color: #666666;
     -webkit-transition: all .4s linear 0s;
@@ -1306,6 +1301,7 @@ textarea.form-control {
     background-image: url("../images/update-bg.jpg");
     position: relative;
     background-size: cover;
+    top: 3em;
 }
 .page-banner-area:before {
     content: "";

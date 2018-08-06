@@ -30,6 +30,9 @@ layout: default
                             </div>
                             <div class="blog-content-desc">
                                 <h4 class="themeix-blog-h">{{page.title}}</h4>
+                                <div class="blog-data">
+                                    <p>Von <a href="mailto:info@bivd-initiative.de">{{page.author_name}}</a> in <a href="{{page.url}}">{{page.category}}</a> </p>
+                                </div>
                                 <p>{{page.content}}</p>
                                 <div class="blog-post-date">
                                     <p>{{page.date | date:"%d"}} <span>{{page.date | date:"%B"}}</span> </p>
@@ -39,9 +42,6 @@ layout: default
                                       <div class="tagcloud">
                                          {{ site | tag_cloud }}
                                       </div>
-                                    </div>
-                                    <div class="blog-data">
-                                        <p>By <a href="{{page.url}}">{{page.author_name}}</a> in <a href="{{page.url}}">{{page.category}}</a> </p>
                                     </div>
                                 </div>
                                 <!-- Leave a Comment -->
@@ -58,20 +58,11 @@ layout: default
                 </div>
                 <!-- End Blog Content -->
                 <!-- Start Blog Sidebar -->
-                <div class="col-md-3">
+                <!--<div class="col-md-3">
                     <div class="row">
                         <div class="blog-sidebar">
                             <div class="col-md-12 col-sm-6">
-                                <aside id="dwqa-categories-2" class="widget widget_categories dwqa_widget dwqa_widget_categories sidebar-list">
-                                 {% include categories.html %}
-                                </aside>
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                <aside class="widget dwqa-widget dwqa-popular-question">
-                                    <div class="sidebar-popular-post dwqa-popular-questions">
-                                      {% include popular_questions.html %}
-                                    </div>
-                                </aside>
+                              {% include twitter_widgets.html %}
                             </div>
                         </div>
                     </div>

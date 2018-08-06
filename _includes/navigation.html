@@ -6,7 +6,7 @@
                 <!-- Start Header Logo -->
                 <div class="col-xs-12 col-md-3">
                     <div class="header-logo">
-                        <a href="{{site.url}}"><img src="../assets/images/bivd5.png"></a>
+                        <a href="{{site.url}}"><img src="/assets/images/bivd5.png"></a>
                     </div>
                 </div>
                 <!-- End Header Logo -->
@@ -72,17 +72,23 @@
 
                                 <nav>
                                     <ul class="nav navbar-nav">
-                                        {% for pageinfo in site.pages %}
-                                        {% if pageinfo.navigation == true %}
                                         <li>
-                                            <a href="{{pageinfo.url}}">{{pageinfo.title}}
-                                                <span>{{pageinfo.sub_title}}</span>
+                                            <a href="#initiative">Initiative
+                                                <span>Über BiVD</span>
                                             </a>
                                         </li>
-                                        {% endif %}
-                                        {% endfor %}
                                         <li>
-                                            <a href="/pages/index.html">Blog
+                                            <a href="#vision">Vision
+                                                <span>Blockchain</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#partner">Partner
+                                                <span>Netzwerk</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/">Blog
                                                 <span>Neuigkeiten</span>
                                             </a>
                                         </li>
