@@ -381,6 +381,9 @@ padding-top: 65px;
     .control-round .carousel-control{
         display: none;
     }
+    .navbar-fixed-top {
+        position: static;
+    }
 
 }
 @media  (max-width: 480px) {
