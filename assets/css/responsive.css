@@ -151,6 +151,10 @@ padding-top: 65px;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
 
+    .slider-buttons{
+        display: none;
+    }
+
 
     .slider-wrapper .caption-inner h2 {
         font-size:22px;
@@ -315,7 +319,7 @@ padding-top: 65px;
       text-align: center;
     }
     .slider-fixed-text p {
-        display:none;
+        //display:none;
     }
     .slider-wrapper-2 .slider-fixed-text h1 {
         font-size:25px;
