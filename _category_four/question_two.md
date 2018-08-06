@@ -7,7 +7,7 @@ category_name:
   - Gemeinsame Standards
 
 question: 
-  - How Can I Learning VueJS Framework ?
+  - Sollten auch neue Standards entwickelt werden?
 
 answer:
    - VueJS Framework Lorem ipsum dolor sit amet. VueJs consectetur adipisicing elit. Fugit veniam quasi dolorem molestiae aperiam commodi obcaecati, non, asperiores assumenda veritatis velit. Suscipit placeat tempore, enim cupiditate reprehenderit voluptas id nobis!

@@ -75,7 +75,7 @@ h6 {
     margin: 0 0 15px;
     font-weight: 700;
 }
-
+html,body{width:100%;}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -219,9 +219,9 @@ input:-webkit-autofill:focus {
 *********************************/
 
 .menu-area {
-    position: relative;
     margin-bottom: 0;
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+    background: #fff;
 }
 .mainmenu .navbar {
     margin: 0;
@@ -265,6 +265,12 @@ input:-webkit-autofill:focus {
     background-color: transparent;
     text-decoration: none;
 }
+
+.mainmenu .navbar.navbar-shrink {
+    background-color: white;
+    opacity: .8;
+}
+
 /*****************************************
 
 1.1 Dropdown Menu
@@ -949,7 +955,7 @@ background-color: transparent!important;
     bottom: 0;
     width: 100%;
     min-height: 65px;
-    background-color: #71c668;
+    background-color: #2196F3;
     text-align: center;
     max-width: 275px;
     margin: 0 auto;
@@ -1227,7 +1233,7 @@ textarea.form-control {
     transition: all .4s linear 0s;
 }
 .subscribe-form button:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
 }
 .subscribe-form .form-control:focus {
     box-shadow: none;
@@ -1355,7 +1361,7 @@ span.sub-title a {
     padding-top: 60px;
 }
 .update-badge {
-    background-color: #71c668;
+    background-color: #2196F3;
     padding: 10px;
     text-transform: uppercase;
 }
@@ -1389,7 +1395,7 @@ span.sub-title a {
     border: medium none;
 }
 .update-btn:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
     color: #fff;
 }
 .update-box .update-btn {
@@ -1441,7 +1447,7 @@ span.sub-title a {
     content: "\f044";
     font-family: "FontAwesome";
     padding-right: 10px;
-    color: #71c668;
+    color: #2196F3;
 }
 .modal-body {
     padding: 10px;
@@ -1493,7 +1499,7 @@ span.sub-title a {
 }
 
 .themeix-purchase-btn-2:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
     color: #fff;
 }
 .themeix-purchase-btn-3 {
@@ -1501,7 +1507,7 @@ span.sub-title a {
     color: #2196F3;	
 }
 .themeix-purchase-btn-3:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
     color: #fff;
 }
 
@@ -1509,7 +1515,7 @@ span.sub-title a {
     padding-top: 25px;
 }
 .purchase-link a:focus {
-    color: #71c668;
+    color: #2196F3;
     background-color: #fff;
 }
 /*************************************************
@@ -1696,7 +1702,7 @@ span.sub-title a {
 }
 .read-more:hover {
 
-    background-color:#71c668;
+    background-color:#2196F3;
     color:#fff;
 }
 .hover-icon {
@@ -1937,7 +1943,7 @@ a.comment-reply:hover {
     transition: all .4s linear 0s;
 }
 .dwqa-search button:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
 }
 .dwqa-question-filter {
     min-height: 80px;
@@ -2103,7 +2109,7 @@ a.comment-reply:hover {
     font-size: 13px;
 }
 .dwqa-votes-count {
-    background-color: #71c668;
+    background-color: #2196F3;
     color: #fff;
     font-size: 13px;
 }
@@ -2133,9 +2139,9 @@ a.comment-reply:hover {
     padding-left: 5px;
 }
 .dwqa-page-numbers:hover {
-    background-color: #71c668;
+    background-color: #2196F3;
     color: #fff;
-    border-color: #71c668;
+    border-color: #2196F3;
 }
 .dwqa-questions-footer {
     margin-top: 40px;
@@ -2211,7 +2217,7 @@ a.comment-reply:hover {
     width: 0;
 }
 .dwqa-question-vote .dwqa-vote:hover {
-    border-color: transparent transparent #71c668;
+    border-color: transparent transparent #2196F3;
 }
 .dwqa-question-vote .dwqa-vote-down {
     -moz-border-bottom-colors: none;
@@ -2328,7 +2334,7 @@ a.comment-reply:hover {
     width: 0;
 }
 .dwqa-answer-vote .dwqa-vote:hover {
-    border-color: transparent transparent #71c668;
+    border-color: transparent transparent #2196F3;
 }
 .dwqa-answer-vote .dwqa-vote-down {
     -moz-border-bottom-colors: none;

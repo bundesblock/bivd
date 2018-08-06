@@ -13,6 +13,9 @@
                             <div class="row">
                                 <img src="../assets/images/sketches/architektur2.png" style="width: 85%; margin: 5em;">
                             </div>
+                            <div class="col-md-12">
+                                <h2 style="margin: 2em;">Wir entwickeln Antworten auf diese Fragen:</h2>
+                            </div>
                             <div class="row">
                                <!-- Start Category One -->
                                 <div class="col-md-6">
@@ -23,7 +26,7 @@
                                       {% endfor %}
                                         <ul>
                                         {% for q in  site.category_one %}
-                                          <li><a href="{{q.url}}">{{q.question}}</a></li>
+                                          <li><a>{{q.question}}</a></li>
                                         {% endfor %}
                                         </ul>
                                     </div>
@@ -39,7 +42,7 @@
                                       {% endfor %}
                                         <ul>
                                         {% for q in  site.category_two %}
-                                          <li><a href="{{q.url}}">{{q.question}}</a></li>
+                                          <li><a>{{q.question}}</a></li>
                                         {% endfor %}
                                         </ul>
                                     </div>
@@ -55,7 +58,7 @@
                                       {% endfor %}
                                         <ul>
                                         {% for q in  site.category_three %}
-                                          <li><a href="{{q.url}}">{{q.question}}</a></li>
+                                          <li><a>{{q.question}}</a></li>
                                         {% endfor %}
                                         </ul>
                                     </div>
@@ -71,7 +74,7 @@
                                       {% endfor %}
                                         <ul>
                                         {% for q in  site.category_four %}
-                                          <li><a href="{{q.url}}">{{q.question}}</a></li>
+                                          <li><a>{{q.question}}</a></li>
                                         {% endfor %}
                                         </ul>
                                     </div>
@@ -80,9 +83,9 @@
 
                             </div>
                             <div class="themeix-section-title"> 
-                             <div class="topics-btn">
-                                <a href="/pages/questions.html" class="themeix-btn hover-bg">Mehr Fragen</a>
-                             </div>
+                             <!--<div class="topics-btn">
+                                <a href="/pages/questions.html" class="themeix-btn hover-bg"></a>
+                             </div>-->
                          </div>
                         </div>
                         <!-- End Topics Link Area -->
@@ -113,9 +116,6 @@
                       </div>
                     <!--End Sidebar -->
                 </div>
-                </div>
-                <div class="row">
-                    <div class="col" style="text-align: center"><img src="../assets/images/sketches/oekosystem2.png" style="width: 70%; margin-top: 6em;"></div>
                 </div>
             </div>
         </div>
