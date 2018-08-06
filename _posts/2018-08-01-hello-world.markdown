@@ -2,7 +2,7 @@
 layout: post
 title:  "Blockchain in der Verwaltung Deutschland (BiVD) - Eine Initiative stellt sich vor"
 date: 2018-08-01 07:42:23 +0200
-category: Meldungen
+category: Blog
 post_image: /assets/images/sketches/hih2.png
 author_name: Helmut Nehrenheim
 tags: Blockchain GovTech Verwaltung Deutschland Web3
