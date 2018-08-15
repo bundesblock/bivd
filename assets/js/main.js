@@ -57,19 +57,18 @@ $('#bootstrap-touch-slider').bsTouchSlider();
     var singleAwerdCarousel = $(".single-awards.owl-carousel");
 
     singleAwerdCarousel.owlCarousel({
-        items: 4,
-        autoplay: false,
-        loop: false,
+        autoplay: true,
+        loop: true,
         center: false,
         autoWidth: false,
         responsive: {
 
             0: {
 
-                items: 2
+                items: 2,
             },
             678: {
-                items: 4
+                items: 4,
             },
             992: {
 
@@ -322,14 +321,13 @@ $('#bootstrap-touch-slider').bsTouchSlider();
         $('a.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
+                scrollTop: $($anchor.attr('href').substr(1)).offset().top
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
     });
 
     function scrolltop() {
-
 
         var wind = $(window);
 
@@ -379,6 +377,8 @@ wind.on('load', function() {
     $(".team-member-wrapper.owl-carousel").owlCarousel({
         autoplay: true,
         loop: true,
+        autoplayHoverPause: true,
+        checkVisible: false,
         responsive: {
 
             0: {

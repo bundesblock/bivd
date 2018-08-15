@@ -1165,6 +1165,9 @@ textarea.form-control {
 9. Start Footer Area
 
 *****************************/
+footer {
+    background-color: #eee;
+}
 
 .single-footer-text p {
     line-height: 24px;

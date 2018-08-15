@@ -5,7 +5,7 @@ layout: default
 <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
-    text-align: center;
+    text-align: left;
   }
   h1 {
     margin: 30px 0;
@@ -17,10 +17,9 @@ layout: default
 
 <div class="container" style="padding: 10em;">
     <h1>Impressum</h1>
-    <p><strong>Verantwortlicher:</strong> Helmut Nehrenheim</p>
-    <p><strong>Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie NRW</strong></p>
-    <p><strong>Referat:</strong> II.1 (CIO)</p>
-    <p><strong>Post:</strong> Berger Allee 25, 40213 Düsseldorf</p>
-    <p><strong>Tel:</strong> (0211) 61772-512</p>
-    <p><strong>E-Mail:</strong> helmut.nehrenheim@mwide.nrw.de</p>
+    <p><strong>Verantwortlicher:</strong> Blockchain Bundesverband e.V.</p>
+    <p><strong>Vertreten durch den Vorstand:</strong><br/>RA Florian Glatz (Präsident)<br/>Dr. Friederike Ernst (Generalsekretärin)<br/>Joachim Lohkamp (Schatzmeister)</p>
+    <p><strong>Registergericht:</strong> VR 36105 B, Amtsgericht Charlottenburg, Berlin</p>
+    <p><strong>Adresse:</strong> Blockchain Bundesverband e.V.<br/>c/o Blockchain Embassy, Manteuffelstr. 77, 10999 Berlin</p>
+    <p><strong>E-Mail:</strong> vorstand@bundesblock.de</p>
 </div>
