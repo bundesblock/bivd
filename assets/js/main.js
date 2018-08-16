@@ -311,7 +311,9 @@ $('#bootstrap-touch-slider').bsTouchSlider();
 
     var mobile_div = $(".mobile-menu nav");
 
-    mobile_div.meanmenu();
+    mobile_div.meanmenu({
+        onePage: true
+    });
 
 /*=============================================
 	5. Scroll to Top
@@ -320,9 +322,15 @@ $('#bootstrap-touch-slider').bsTouchSlider();
     $(function() {
         $('a.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href').substr(1)).offset().top
-            }, 1500, 'easeInOutExpo');
+            try{
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+            } catch (e) {
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href').substr(1)).offset().top
+                }, 1500, 'easeInOutExpo');
+            }
             event.preventDefault();
         });
     });
