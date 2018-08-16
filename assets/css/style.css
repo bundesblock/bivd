@@ -127,7 +127,7 @@ img {
     color: #2196F3;
 }
 .info-bg {
-    background-color: #eef4f9;
+    background-color: #00b3ff;
 }
 .themeix-btn.white-bg:hover {
     background-color: #af2524;
@@ -145,8 +145,8 @@ img {
     color: #fff;
 }
 .info-bg {
-    background-color: #eef4f9;
-    color: #666666;
+    background-color: #00b3ff;
+    color: #fff;
 }
 .hover-bg {
     background-color: #af2524;
@@ -331,10 +331,11 @@ ul.dropdown li a span {
 
 ****************************************/
 .slider-area {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: 5em;
+    width: 100%;
 }
 .slider-wrapper {
     height: 500px;
@@ -789,7 +790,6 @@ background-color: #fff;
 .flip-box-innner {
     padding: 50px 20px;
     color: #fff;
-    padding-top: 80px;
 }
 .flip-box-innner p {
     font-size: 15px;
@@ -1159,6 +1159,10 @@ textarea.form-control {
 }
 .single-awards img {
     padding: 0 10px;
+}
+.awards-section {
+    position: relative;
+    top: 4em;
 }
 /*******************************
 

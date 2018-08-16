@@ -17,77 +17,7 @@
                             <div class="col-md-12">
                                 <h2 style="margin: 2em;">Wir entwickeln Antworten auf diese Fragen:</h2>
                             </div>
-                            <div class="row">
-                               <!-- Start Category One -->
-                                <div class="col-md-6">
-                                    <div class="single-links">
-                                     {% assign category = site.category_one | map: "category_name" | uniq %}
-                                     {% for cat_name in category limit: "1" %}
-                                      <h4 class="list-title">{{cat_name}}</h4>
-                                      {% endfor %}
-                                        <ul>
-                                        {% for q in  site.category_one %}
-                                          <li><a>{{q.question}}</a></li>
-                                        {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                               <!-- End Category One -->
 
-                               <!-- Start Category Two -->
-                                <div class="col-md-6">
-                                    <div class="single-links">
-                                     {% assign category = site.category_two | map: "category_name" | uniq %}
-                                     {% for cat_name in category limit: "1" %}
-                                      <h4 class="list-title">{{cat_name}}</h4>
-                                      {% endfor %}
-                                        <ul>
-                                        {% for q in  site.category_two %}
-                                          <li><a>{{q.question}}</a></li>
-                                        {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                               <!-- End Category Two -->
-
-                               <!-- Start Category Three -->
-                                <div class="col-md-6">
-                                    <div class="single-links">
-                                     {% assign category = site.category_three | map: "category_name" | uniq %}
-                                     {% for cat_name in category limit: "1" %}
-                                      <h4 class="list-title">{{cat_name}}</h4>
-                                      {% endfor %}
-                                        <ul>
-                                        {% for q in  site.category_three %}
-                                          <li><a>{{q.question}}</a></li>
-                                        {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                               <!-- End Category Three -->
-
-                               <!-- Start Category Four -->
-                                <div class="col-md-6">
-                                    <div class="single-links">
-                                     {% assign category = site.category_four | map: "category_name" | uniq %}
-                                     {% for cat_name in category limit: "1" %}
-                                      <h4 class="list-title">{{cat_name}}</h4>
-                                      {% endfor %}
-                                        <ul>
-                                        {% for q in  site.category_four %}
-                                          <li><a>{{q.question}}</a></li>
-                                        {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                               <!-- End Category Four -->
-
-                            </div>
-                            <div class="themeix-section-title"> 
-                             <!--<div class="topics-btn">
-                                <a href="/pages/questions.html" class="themeix-btn hover-bg"></a>
-                             </div>-->
-                         </div>
                         </div>
                         <!-- End Topics Link Area -->
                     </div>
@@ -113,8 +43,83 @@
                           </div>
                       </div>
                     <!--End Sidebar -->
+                    </div>
                 </div>
+
+
+                <div class="row">
+                    <!-- Start Category One -->
+                    <div class="col-md-6">
+                        <div class="single-links">
+                            {% assign category = site.category_one | map: "category_name" | uniq %}
+                            {% for cat_name in category limit: "1" %}
+                            <h4 class="list-title">{{cat_name}}</h4>
+                            {% endfor %}
+                            <ul>
+                                {% for q in  site.category_one %}
+                                <li><a>{{q.question}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Category One -->
+
+                    <!-- Start Category Two -->
+                    <div class="col-md-6">
+                        <div class="single-links">
+                            {% assign category = site.category_two | map: "category_name" | uniq %}
+                            {% for cat_name in category limit: "1" %}
+                            <h4 class="list-title">{{cat_name}}</h4>
+                            {% endfor %}
+                            <ul>
+                                {% for q in  site.category_two %}
+                                <li><a>{{q.question}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Category Two -->
+
+                    <!-- Start Category Three -->
+                    <div class="col-md-6">
+                        <div class="single-links">
+                            {% assign category = site.category_three | map: "category_name" | uniq %}
+                            {% for cat_name in category limit: "1" %}
+                            <h4 class="list-title">{{cat_name}}</h4>
+                            {% endfor %}
+                            <ul>
+                                {% for q in  site.category_three %}
+                                <li><a>{{q.question}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Category Three -->
+
+                    <!-- Start Category Four -->
+                    <div class="col-md-6">
+                        <div class="single-links">
+                            {% assign category = site.category_four | map: "category_name" | uniq %}
+                            {% for cat_name in category limit: "1" %}
+                            <h4 class="list-title">{{cat_name}}</h4>
+                            {% endfor %}
+                            <ul>
+                                {% for q in  site.category_four %}
+                                <li><a>{{q.question}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Category Four -->
+
                 </div>
+                <div class="themeix-section-title">
+                    <!--<div class="topics-btn">
+                       <a href="/pages/questions.html" class="themeix-btn hover-bg"></a>
+                    </div>-->
+                </div>
+
+
             </div>
         </div>
     </section>

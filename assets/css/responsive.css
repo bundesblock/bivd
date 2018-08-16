@@ -137,7 +137,7 @@
         padding-left: 5em;
     }
     .mean-container .mean-bar {
-        position: absolute;
+        position: fixed;
         top: 1.2em;
         background: none;
     }
