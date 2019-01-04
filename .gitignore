@@ -1,5 +1,10 @@
-.idea
-_site
-Gemfile.lock
-.sass-cache
+node_modules/
+public
+.gatsby-context.js
 .DS_Store
+.intermediate-representation/
+.cache/
+yarn.lock
+package-lock.json
+
+.idea/

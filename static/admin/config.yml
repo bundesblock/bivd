@@ -1,0 +1,5 @@
+backend:
+  name: bivd-gatsby-site
+
+media_folder: static/images
+public_folder: images
