@@ -8,8 +8,8 @@ import 'prismjs/themes/prism-tomorrow.css'
 import { GlobalStyle } from './Commons'
 
 const ChildrenWrapper = styled.div`
-margin-top: 60px;
-@media(max-width: 992px){
+margin-top: 80px;
+@media(min-width: 501px) and (max-width: 992px){
   margin-top: 140px;
 }
 `
