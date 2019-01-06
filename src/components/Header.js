@@ -72,7 +72,7 @@ const LogoWrapper = styled.div`
     padding-bottom: 18px;
   }
   @media(max-width: 500px){
-    text-align: left;
+    text-align: right;
     width: auto;
   }
 `
@@ -140,6 +140,7 @@ class Header extends React.Component {
         </Sidenav>
         <HeaderWrapper>
           <HeaderNav>
+            <Hamburger onClick={() => this.toggleSidebar()}>☰</Hamburger>
             <LogoWrapper><a href="/#top"><img src={bivdLogo} style={{ width: '162px', height: '44px' }} /></a></LogoWrapper>
             {headerLinks.map((headerLink, i) => (
               <HeaderLink to={headerLink.url} hideOnSmallScreens={true} key={`header-link-${i}`}>
@@ -147,7 +148,6 @@ class Header extends React.Component {
                 <SubLabel>{headerLink.subLabel}</SubLabel>
               </HeaderLink>
             ))}
-            <Hamburger onClick={() => this.toggleSidebar()}>☰</Hamburger>
           </HeaderNav>
         </HeaderWrapper>
       </>
